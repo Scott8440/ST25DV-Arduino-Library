@@ -15,10 +15,9 @@
 //Constructors
     ST25DV::ST25DV(){/*null constructor*/}
 
-    uint8_t ST25DV::begin(TwoWire &portin){
+    void ST25DV::begin(TwoWire &portin){
         this->WIREPORT = &portin;
         this->BUILT_IN_DELAY = 1;
-        uint8_t result = this->WIREPORT->begin();
         this->MEMENDPOINT = getLastAdd();
         return result;
     }
