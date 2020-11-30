@@ -488,7 +488,7 @@
             setByte(this->ADDRESS_CONFIG, this->REG_MB_WDG, 0x00);
         }
         else{
-            setByte(this->ADDRESS_CONFIG, this-REG_MB_WDG, val);
+            setByte(this->ADDRESS_CONFIG, this->REG_MB_WDG, val);
         }
     }
 
@@ -524,7 +524,7 @@
         return getByte(this->ADDRESS_CONFIG, this->REG_BLK_SIZE);
     }
 
-    uint8_t ST25DV::getSizeK(){
+    uint16_t ST25DV::getSizeK(){
         switch(getByte(this->ADDRESS_CONFIG, this->REG_MEM_SIZE_H)){
             case 0x07:
                 return 64;
