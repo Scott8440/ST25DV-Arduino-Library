@@ -13,7 +13,7 @@
 #include "ST25DV.h"
 
 //Constructors
-    void ST25DV::ST25DV(){/*null constructor*/}
+    ST25DV::ST25DV(){/*null constructor*/}
 
     uint8_t ST25DV::begin(TwoWire &portin){
         this->WIREPORT = &portin;
