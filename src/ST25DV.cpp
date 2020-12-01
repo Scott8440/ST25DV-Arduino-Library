@@ -19,7 +19,6 @@
         this->WIREPORT = &portin;
         this->BUILT_IN_DELAY = 1;
         this->MEMENDPOINT = getLastAdd();
-        return result;
     }
 
     void ST25DV::enableDelay(bool en){

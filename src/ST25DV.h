@@ -31,7 +31,7 @@ class ST25DV
     public:
     //Constructors
         ST25DV(void);
-        uint8_t begin(TwoWire &port = Wire);
+        void begin(TwoWire &port = Wire);
         void enableDelay(bool en);
         
     
