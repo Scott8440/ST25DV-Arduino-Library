@@ -541,6 +541,8 @@
             return this->REG_USER_MEM_END_16K;
         case 64:
             return this->REG_USER_MEM_END_64K;
+        default:
+            return 0;
         }
     }
 
